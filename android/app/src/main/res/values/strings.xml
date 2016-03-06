@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Eva</string>
+
+    <string name="action_sign_up">Sign Up</string>
+    <string name="label_signup_question">What is your phone number?</string>
+    <string name="action_verify">Verify</string>
+    <string name="label_verification">We have sent you a SMS with a code to the number</string>
+    <string name="help_label">HELP!</string>
+    <string name="api_preferences">co.axiomzen.API</string>
+    <string name="preference_token">token</string>
+
+</resources>
