@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerificationViewController" customModule="Eva" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="QST-eg-yyK" id="a0a-9i-EKX"/>
+                <outlet property="phoneNumberLabel" destination="oiV-tT-5zf" id="QbT-10-6wS"/>
+                <outlet property="verificationCodeField" destination="ORd-IB-dQp" id="hjs-gW-nRX"/>
+                <outlet property="verifyButton" destination="jVm-St-dGU" id="zcm-g3-bqz"/>
+                <outlet property="view" destination="y70-I6-I5g" id="LRv-Ow-d5X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="y70-I6-I5g">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVm-St-dGU" userLabel="Signup Button" customClass="Button" customModule="Eva" customModuleProvider="target">
+                    <rect key="frame" x="48" y="185" width="224" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cTM-fF-hAt"/>
+                    </constraints>
+                    <state key="normal" title="Verify"/>
+                    <connections>
+                        <action selector="handleVerify" destination="-1" eventType="touchUpInside" id="2bw-22-g2e"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you a SMS with a code to the number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-fO-2in" userLabel="Phone Number Label">
+                    <rect key="frame" x="20" y="16" width="280" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 (123) 1234 1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiV-tT-5zf">
+                    <rect key="frame" x="78" y="73" width="163.5" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORd-IB-dQp" userLabel="Verification Code Field">
+                    <rect key="frame" x="48" y="125" width="224" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="GcJ-Q6-WYk"/>
+                    </constraints>
+                    <color key="textColor" red="0.78823529410000004" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QST-eg-yyK">
+                    <rect key="frame" x="280" y="137" width="20" height="20"/>
+                    <color key="color" red="0.78823529410000004" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BnZ-fO-2in" firstAttribute="leading" secondItem="y70-I6-I5g" secondAttribute="leading" constant="20" id="0CR-ph-LOG"/>
+                <constraint firstItem="oiV-tT-5zf" firstAttribute="top" secondItem="BnZ-fO-2in" secondAttribute="bottom" constant="16" id="3Hr-Lw-AZv"/>
+                <constraint firstItem="QST-eg-yyK" firstAttribute="centerY" secondItem="ORd-IB-dQp" secondAttribute="centerY" id="GTm-tv-bOz"/>
+                <constraint firstItem="jVm-St-dGU" firstAttribute="width" secondItem="y70-I6-I5g" secondAttribute="width" multiplier="0.7" id="T38-ay-MvX"/>
+                <constraint firstItem="oiV-tT-5zf" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="YLe-eZ-MBw"/>
+                <constraint firstAttribute="trailing" secondItem="BnZ-fO-2in" secondAttribute="trailing" constant="20" id="Yed-Lk-9N4"/>
+                <constraint firstItem="QST-eg-yyK" firstAttribute="leading" secondItem="ORd-IB-dQp" secondAttribute="trailing" constant="8" id="bbt-Ct-gw6"/>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="ewL-5B-BFc"/>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="top" secondItem="oiV-tT-5zf" secondAttribute="bottom" constant="29" id="hcs-YC-R6H"/>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="width" secondItem="y70-I6-I5g" secondAttribute="width" multiplier="0.7" id="iNT-u2-DUd"/>
+                <constraint firstItem="jVm-St-dGU" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="lNF-0q-OL0"/>
+                <constraint firstItem="jVm-St-dGU" firstAttribute="top" secondItem="ORd-IB-dQp" secondAttribute="bottom" constant="16" id="pFN-tz-eeF"/>
+                <constraint firstItem="BnZ-fO-2in" firstAttribute="top" secondItem="y70-I6-I5g" secondAttribute="top" constant="16" id="sTF-Qo-mBp"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

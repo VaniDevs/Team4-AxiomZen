@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (3.2.1)
+  - AlamofireImage (2.3.1):
+    - Alamofire (~> 3.2)
+  - JTSImageViewController (1.5.1)
+  - PhoneNumberKit (0.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 2.0)
+  - JTSImageViewController
+  - PhoneNumberKit
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  AlamofireImage: e52336282757bbe1644f075d6cb85f19c891f939
+  JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
+  PhoneNumberKit: 683f1287a88c1f27386b27cad851081c7c45cb62
+
+COCOAPODS: 0.39.0

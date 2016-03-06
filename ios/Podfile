@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'Eva' do
+  pod 'Alamofire'
+  pod 'PhoneNumberKit'
+  pod 'AlamofireImage', '~> 2.0'
+  pod 'JTSImageViewController'
+end
+
+target 'Eva-Today' do
+    pod 'Alamofire'
+end

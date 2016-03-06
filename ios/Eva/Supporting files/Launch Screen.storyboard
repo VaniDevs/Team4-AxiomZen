@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default-Portrait" translatesAutoresizingMaskIntoConstraints="NO" id="676-N2-oKb">
+                                <rect key="frame" x="0.0" y="-212" width="600" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="7Bl-lh-A1M"/>
+                                    <constraint firstAttribute="height" constant="300" id="ZZl-GI-4Ur"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Bl-lh-A1M"/>
+                                        <exclude reference="ZZl-GI-4Ur"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78823529411764703" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="676-N2-oKb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4fQ-ZN-Wlm"/>
+                            <constraint firstItem="676-N2-oKb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="A55-dt-Y9X"/>
+                            <constraint firstItem="676-N2-oKb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EDb-LG-Gao"/>
+                            <constraint firstAttribute="trailing" secondItem="676-N2-oKb" secondAttribute="trailing" id="Mg4-ru-HuE"/>
+                            <constraint firstItem="676-N2-oKb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="dHb-pV-asI"/>
+                            <constraint firstItem="676-N2-oKb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eNj-0E-Eg8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="676-N2-oKb" secondAttribute="trailing" id="yve-0v-MT0"/>
+                            <constraint firstItem="676-N2-oKb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="z22-3B-e3K"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4fQ-ZN-Wlm"/>
+                                <exclude reference="A55-dt-Y9X"/>
+                                <exclude reference="dHb-pV-asI"/>
+                                <exclude reference="eNj-0E-Eg8"/>
+                                <exclude reference="yve-0v-MT0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default-Portrait" width="768" height="1024"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="Eva" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="jNc-V0-1Ex" id="VOv-H9-gPh"/>
+                <outlet property="centerConstraint" destination="1Ym-bz-5d1" id="VLJ-t8-V69"/>
+                <outlet property="phoneNumberField" destination="ORd-IB-dQp" id="tcX-hU-d7c"/>
+                <outlet property="signupButton" destination="fX2-tB-72m" id="TWz-t1-wOO"/>
+                <outlet property="view" destination="y70-I6-I5g" id="LRv-Ow-d5X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="y70-I6-I5g" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+1 (123) 1234 1234" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORd-IB-dQp" userLabel="Phone Number Field">
+                    <rect key="frame" x="48" y="262" width="224" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2aU-Ts-BnX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your phone number?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDz-R0-Gpf" userLabel="Question">
+                    <rect key="frame" x="37.5" y="220" width="245.5" height="26"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX2-tB-72m" userLabel="Signup Button" customClass="Button" customModule="Eva" customModuleProvider="target">
+                    <rect key="frame" x="48" y="322" width="224" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5K2-eV-Mh9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="Sign Up"/>
+                    <connections>
+                        <action selector="handleSignUp" destination="-1" eventType="touchUpInside" id="CPH-qb-bqt"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-wv-hiR">
+                    <rect key="frame" x="110" y="112" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="0i8-KH-ulp"/>
+                        <constraint firstAttribute="width" secondItem="JOK-wv-hiR" secondAttribute="height" multiplier="1:1" id="oEY-Hk-qzd"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jNc-V0-1Ex">
+                    <rect key="frame" x="280" y="274" width="20" height="20"/>
+                    <color key="color" red="0.78823529410000004" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="centerY" secondItem="y70-I6-I5g" secondAttribute="centerY" id="1Ym-bz-5d1"/>
+                <constraint firstItem="jNc-V0-1Ex" firstAttribute="centerY" secondItem="ORd-IB-dQp" secondAttribute="centerY" id="5ma-S7-2Oy"/>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="width" secondItem="y70-I6-I5g" secondAttribute="width" multiplier="0.7" id="Dtn-Ku-seB"/>
+                <constraint firstItem="fX2-tB-72m" firstAttribute="width" secondItem="y70-I6-I5g" secondAttribute="width" multiplier="0.7" id="EbM-xG-mbm"/>
+                <constraint firstItem="JOK-wv-hiR" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="KvG-n7-7bo"/>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="MdA-1J-xlC"/>
+                <constraint firstItem="jNc-V0-1Ex" firstAttribute="leading" secondItem="ORd-IB-dQp" secondAttribute="trailing" constant="8" id="N4y-oV-pAG"/>
+                <constraint firstItem="fX2-tB-72m" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="dDX-UO-TEG"/>
+                <constraint firstItem="hDz-R0-Gpf" firstAttribute="centerX" secondItem="y70-I6-I5g" secondAttribute="centerX" id="fvf-Az-Xjw"/>
+                <constraint firstItem="ORd-IB-dQp" firstAttribute="top" secondItem="hDz-R0-Gpf" secondAttribute="bottom" constant="16" id="iEM-CT-TIF"/>
+                <constraint firstItem="hDz-R0-Gpf" firstAttribute="top" secondItem="JOK-wv-hiR" secondAttribute="bottom" constant="8" id="qOc-Mo-uHq"/>
+                <constraint firstItem="fX2-tB-72m" firstAttribute="top" secondItem="ORd-IB-dQp" secondAttribute="bottom" constant="16" id="wBG-xh-8ts"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <action selector="dismissKeyboard" destination="-1" eventType="touchUpInside" id="ZcW-D0-Jnr"/>
+            </connections>
+            <point key="canvasLocation" x="160" y="373"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+    </resources>
+</document>

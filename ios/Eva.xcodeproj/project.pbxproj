@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B638471C8BEF4B00DDA98A /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B638461C8BEF4B00DDA98A /* ContextViewController.swift */; };
+		03B638491C8BEF5800DDA98A /* ContextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B638481C8BEF5800DDA98A /* ContextViewController.xib */; };
+		03B6384B1C8CC1A000DDA98A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B6384A1C8CC1A000DDA98A /* Platform.swift */; };
+		03E0070A1C8BB824000F4AEB /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E007091C8BB824000F4AEB /* PhotosViewController.swift */; };
+		03E0070C1C8BB835000F4AEB /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E0070B1C8BB835000F4AEB /* PhotosViewController.xib */; };
+		03E0070E1C8BBE48000F4AEB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0070D1C8BBE48000F4AEB /* PhotoCell.swift */; };
+		03E007101C8BBEA4000F4AEB /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E0070F1C8BBEA4000F4AEB /* PhotoCell.xib */; };
+		03EF7C571C8B7CCC0087867A /* String+Clean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C551C8B7CCC0087867A /* String+Clean.swift */; };
+		03EF7C581C8B7CCC0087867A /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C561C8B7CCC0087867A /* String+Format.swift */; };
+		03EF7C5C1C8B7F9E0087867A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C5B1C8B7F9E0087867A /* Button.swift */; };
+		03EF7C5F1C8B99540087867A /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C5E1C8B99540087867A /* UIImage+Color.swift */; };
+		03EF7C601C8B9B6A0087867A /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C5E1C8B99540087867A /* UIImage+Color.swift */; };
+		03EF7C631C8B9C530087867A /* EmergencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C621C8B9C530087867A /* EmergencyButton.swift */; };
+		03EF7C641C8B9C5B0087867A /* EmergencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C621C8B9C530087867A /* EmergencyButton.swift */; };
+		03EF7C661C8B9C7A0087867A /* UIColor+Shades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C651C8B9C7A0087867A /* UIColor+Shades.swift */; };
+		03EF7C671C8B9C7A0087867A /* UIColor+Shades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C651C8B9C7A0087867A /* UIColor+Shades.swift */; };
+		03FA57261C8BA50400499978 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA57251C8BA50400499978 /* AccountViewController.swift */; };
+		03FA57281C8BA58600499978 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FA57271C8BA58600499978 /* AccountViewController.xib */; };
+		0C53A7532AB7A4F146CAB9BA /* Pods_Eva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB86430589488B4492910BF /* Pods_Eva.framework */; };
+		354BE4001C8C20CD009CFEFC /* MaskTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BE3FF1C8C20CD009CFEFC /* MaskTransition.swift */; };
+		354BE4021C8C2BA8009CFEFC /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354BE4011C8C2BA8009CFEFC /* UIImageView+Additions.swift */; };
+		354BE4041C8C4712009CFEFC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354BE4031C8C4712009CFEFC /* LocalAuthentication.framework */; };
+		3591B1301C8B5F8100B313B3 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B12F1C8B5F8100B313B3 /* LocationController.swift */; };
+		3591B1321C8B5FAC00B313B3 /* MotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1311C8B5FAC00B313B3 /* MotionController.swift */; };
+		3591B13A1C8B643700B313B3 /* HTKnockDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1391C8B643700B313B3 /* HTKnockDetector.m */; };
+		3591B1411C8B6DD000B313B3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3591B1401C8B6DD000B313B3 /* NotificationCenter.framework */; };
+		3591B1441C8B6DD000B313B3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1431C8B6DD000B313B3 /* TodayViewController.swift */; };
+		3591B1471C8B6DD000B313B3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3591B1451C8B6DD000B313B3 /* MainInterface.storyboard */; };
+		3591B14B1C8B6DD000B313B3 /* Eva-Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3591B13F1C8B6DD000B313B3 /* Eva-Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3591B1531C8B7FDB00B313B3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1521C8B7FDB00B313B3 /* UIViewController+Additions.swift */; };
+		3591B1561C8B9E7E00B313B3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1551C8B9E7E00B313B3 /* Theme.swift */; };
+		3591B1581C8BA00900B313B3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1571C8BA00900B313B3 /* Color.swift */; };
+		3591B1591C8BA4D100B313B3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF7C5B1C8B7F9E0087867A /* Button.swift */; };
+		3591B15A1C8BA52800B313B3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1571C8BA00900B313B3 /* Color.swift */; };
+		3591B1611C8BDCE300B313B3 /* CameraStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1601C8BDCE300B313B3 /* CameraStreamer.swift */; };
+		3591B1631C8BE1B600B313B3 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1621C8BE1B600B313B3 /* UIView+Additions.swift */; };
+		3591B1671C8BF09200B313B3 /* UIBarButtonItem+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B1661C8BF09200B313B3 /* UIBarButtonItem+Additions.swift */; };
+		6C04905C433A9E7D18CF3356 /* Pods_Eva_Today.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23243FC5CB4E66C9374163FD /* Pods_Eva_Today.framework */; };
+		D43507A51C8CA0DE003831EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43507A41C8CA0DE003831EF /* User.swift */; };
+		D43507A61C8CA32A003831EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43507A41C8CA0DE003831EF /* User.swift */; };
+		D43507A81C8CA4E1003831EF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43507A71C8CA4E1003831EF /* Launch Screen.storyboard */; };
+		D44D1A5A1C8B595800C1E498 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A541C8B595800C1E498 /* ReportViewController.swift */; };
+		D44D1A5B1C8B595800C1E498 /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44D1A551C8B595800C1E498 /* ReportViewController.xib */; };
+		D44D1A5C1C8B595800C1E498 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A561C8B595800C1E498 /* SignupViewController.swift */; };
+		D44D1A5D1C8B595800C1E498 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44D1A571C8B595800C1E498 /* SignupViewController.xib */; };
+		D44D1A5E1C8B595800C1E498 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A581C8B595800C1E498 /* VerificationViewController.swift */; };
+		D44D1A5F1C8B595800C1E498 /* VerificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44D1A591C8B595800C1E498 /* VerificationViewController.xib */; };
+		D44D1A661C8B596300C1E498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A601C8B596300C1E498 /* AppDelegate.swift */; };
+		D44D1A671C8B596300C1E498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44D1A611C8B596300C1E498 /* Assets.xcassets */; };
+		D44D1A6D1C8B5EC000C1E498 /* ModelDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A6C1C8B5EC000C1E498 /* ModelDataManager.swift */; };
+		D44D1A6F1C8B5EDE00C1E498 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A6E1C8B5EDE00C1E498 /* Networking.swift */; };
+		D44D1A741C8B60B400C1E498 /* JSONParserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A731C8B60B400C1E498 /* JSONParserType.swift */; };
+		D44D1A791C8B617B00C1E498 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A781C8B617B00C1E498 /* Environment.swift */; };
+		D44D1A7B1C8B636B00C1E498 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A7A1C8B636B00C1E498 /* Persistence.swift */; };
+		D44D1A7E1C8B667500C1E498 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A7D1C8B667500C1E498 /* SignUpInteractor.swift */; };
+		D44D1A801C8B669300C1E498 /* VerifyPhoneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A7F1C8B669300C1E498 /* VerifyPhoneInteractor.swift */; };
+		D44D1A821C8B66A000C1E498 /* ReportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A811C8B66A000C1E498 /* ReportInteractor.swift */; };
+		D44D1A8E1C8B74DB00C1E498 /* NSError+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A8B1C8B74DB00C1E498 /* NSError+Additions.swift */; };
+		D44D1A8F1C8B74DB00C1E498 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A8C1C8B74DB00C1E498 /* String+Additions.swift */; };
+		D44D1A901C8B74DB00C1E498 /* UIAlertController+Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A8D1C8B74DB00C1E498 /* UIAlertController+Short.swift */; };
+		D44D1A911C8B94F500C1E498 /* ReportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A811C8B66A000C1E498 /* ReportInteractor.swift */; };
+		D44D1A921C8B94FC00C1E498 /* ModelDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A6C1C8B5EC000C1E498 /* ModelDataManager.swift */; };
+		D44D1A931C8B950300C1E498 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A6E1C8B5EDE00C1E498 /* Networking.swift */; };
+		D44D1A941C8B950800C1E498 /* JSONParserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A731C8B60B400C1E498 /* JSONParserType.swift */; };
+		D44D1A951C8B951300C1E498 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A7A1C8B636B00C1E498 /* Persistence.swift */; };
+		D44D1A961C8B951A00C1E498 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A781C8B617B00C1E498 /* Environment.swift */; };
+		D44D1A971C8B990100C1E498 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B12F1C8B5F8100B313B3 /* LocationController.swift */; };
+		D44D1A991C8B994300C1E498 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44D1A981C8B994300C1E498 /* CoreLocation.framework */; };
+		D44D1A9A1C8B994C00C1E498 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44D1A981C8B994300C1E498 /* CoreLocation.framework */; };
+		D44D1A9D1C8BAE4200C1E498 /* NSError+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1A8B1C8B74DB00C1E498 /* NSError+Additions.swift */; };
+		D4735AE31C8BBB2D00DEF6D6 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4735AE21C8BBB2D00DEF6D6 /* ProfileInteractor.swift */; };
+		D4735AE51C8BC5FC00DEF6D6 /* FakeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4735AE41C8BC5FC00DEF6D6 /* FakeNetworking.swift */; };
+		D4735AE61C8BC7DE00DEF6D6 /* FakeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4735AE41C8BC5FC00DEF6D6 /* FakeNetworking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3591B1491C8B6DD000B313B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0397C7901C8B54DC00A3875C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3591B13E1C8B6DD000B313B3;
+			remoteInfo = "Eva-Today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3591B14F1C8B6DD100B313B3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3591B14B1C8B6DD000B313B3 /* Eva-Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0397C7981C8B54DC00A3875C /* Eva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B638461C8BEF4B00DDA98A /* ContextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
+		03B638481C8BEF5800DDA98A /* ContextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextViewController.xib; sourceTree = "<group>"; };
+		03B6384A1C8CC1A000DDA98A /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		03E007091C8BB824000F4AEB /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		03E0070B1C8BB835000F4AEB /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		03E0070D1C8BBE48000F4AEB /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		03E0070F1C8BBEA4000F4AEB /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		03EF7C551C8B7CCC0087867A /* String+Clean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Clean.swift"; sourceTree = "<group>"; };
+		03EF7C561C8B7CCC0087867A /* String+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
+		03EF7C5B1C8B7F9E0087867A /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		03EF7C5E1C8B99540087867A /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		03EF7C621C8B9C530087867A /* EmergencyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyButton.swift; sourceTree = "<group>"; };
+		03EF7C651C8B9C7A0087867A /* UIColor+Shades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Shades.swift"; sourceTree = "<group>"; };
+		03FA57251C8BA50400499978 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		03FA57271C8BA58600499978 /* AccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		23243FC5CB4E66C9374163FD /* Pods_Eva_Today.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eva_Today.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		354BE3FF1C8C20CD009CFEFC /* MaskTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskTransition.swift; sourceTree = "<group>"; };
+		354BE4011C8C2BA8009CFEFC /* UIImageView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
+		354BE4031C8C4712009CFEFC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		354BE4051C8C4FED009CFEFC /* Eva.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Eva.entitlements; path = ../Eva.entitlements; sourceTree = "<group>"; };
+		354BE4061C8C5012009CFEFC /* Eva-Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Eva-Today.entitlements"; sourceTree = "<group>"; };
+		3591B12F1C8B5F8100B313B3 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = SOURCE_ROOT; };
+		3591B1311C8B5FAC00B313B3 /* MotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionController.swift; sourceTree = SOURCE_ROOT; };
+		3591B1341C8B61E900B313B3 /* Eva-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eva-Bridging-Header.h"; sourceTree = "<group>"; };
+		3591B1381C8B643700B313B3 /* HTKnockDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKnockDetector.h; sourceTree = "<group>"; };
+		3591B1391C8B643700B313B3 /* HTKnockDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKnockDetector.m; sourceTree = "<group>"; };
+		3591B13F1C8B6DD000B313B3 /* Eva-Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Eva-Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3591B1401C8B6DD000B313B3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3591B1431C8B6DD000B313B3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3591B1461C8B6DD000B313B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3591B1481C8B6DD000B313B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3591B1521C8B7FDB00B313B3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		3591B1551C8B9E7E00B313B3 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3591B1571C8BA00900B313B3 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3591B1601C8BDCE300B313B3 /* CameraStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraStreamer.swift; sourceTree = "<group>"; };
+		3591B1621C8BE1B600B313B3 /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		3591B1661C8BF09200B313B3 /* UIBarButtonItem+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Additions.swift"; sourceTree = "<group>"; };
+		59D4688B9177E7FF38FCB023 /* Pods-Eva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eva/Pods-Eva.debug.xcconfig"; sourceTree = "<group>"; };
+		A40A51683220A9BF8857C684 /* Pods-Eva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eva/Pods-Eva.release.xcconfig"; sourceTree = "<group>"; };
+		AFEF9478E34E6C4455B71FA9 /* Pods-Eva-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva-Today.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eva-Today/Pods-Eva-Today.release.xcconfig"; sourceTree = "<group>"; };
+		CAB86430589488B4492910BF /* Pods_Eva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43507A41C8CA0DE003831EF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D43507A71C8CA4E1003831EF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D44D1A541C8B595800C1E498 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		D44D1A551C8B595800C1E498 /* ReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
+		D44D1A561C8B595800C1E498 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		D44D1A571C8B595800C1E498 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		D44D1A581C8B595800C1E498 /* VerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		D44D1A591C8B595800C1E498 /* VerificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerificationViewController.xib; sourceTree = "<group>"; };
+		D44D1A601C8B596300C1E498 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D44D1A611C8B596300C1E498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D44D1A651C8B596300C1E498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44D1A6C1C8B5EC000C1E498 /* ModelDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataManager.swift; sourceTree = "<group>"; };
+		D44D1A6E1C8B5EDE00C1E498 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D44D1A731C8B60B400C1E498 /* JSONParserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParserType.swift; sourceTree = "<group>"; };
+		D44D1A781C8B617B00C1E498 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D44D1A7A1C8B636B00C1E498 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D44D1A7D1C8B667500C1E498 /* SignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		D44D1A7F1C8B669300C1E498 /* VerifyPhoneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyPhoneInteractor.swift; sourceTree = "<group>"; };
+		D44D1A811C8B66A000C1E498 /* ReportInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportInteractor.swift; sourceTree = "<group>"; };
+		D44D1A8B1C8B74DB00C1E498 /* NSError+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Additions.swift"; sourceTree = "<group>"; };
+		D44D1A8C1C8B74DB00C1E498 /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		D44D1A8D1C8B74DB00C1E498 /* UIAlertController+Short.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Short.swift"; sourceTree = "<group>"; };
+		D44D1A981C8B994300C1E498 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D4735AE21C8BBB2D00DEF6D6 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		D4735AE41C8BC5FC00DEF6D6 /* FakeNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNetworking.swift; sourceTree = "<group>"; };
+		EFE2CDEC3AE4BA11A307FABD /* Pods-Eva-Today.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eva-Today.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eva-Today/Pods-Eva-Today.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0397C7951C8B54DC00A3875C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354BE4041C8C4712009CFEFC /* LocalAuthentication.framework in Frameworks */,
+				D44D1A991C8B994300C1E498 /* CoreLocation.framework in Frameworks */,
+				0C53A7532AB7A4F146CAB9BA /* Pods_Eva.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3591B13C1C8B6DD000B313B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44D1A9A1C8B994C00C1E498 /* CoreLocation.framework in Frameworks */,
+				3591B1411C8B6DD000B313B3 /* NotificationCenter.framework in Frameworks */,
+				6C04905C433A9E7D18CF3356 /* Pods_Eva_Today.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0397C78F1C8B54DC00A3875C = {
+			isa = PBXGroup;
+			children = (
+				0397C79A1C8B54DC00A3875C /* Eva */,
+				3591B1421C8B6DD000B313B3 /* Eva-Today */,
+				0397C7991C8B54DC00A3875C /* Products */,
+				4FEE3F7AD8BAE968774DC75C /* Frameworks */,
+				E1813C0460659E006F24A4D0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0397C7991C8B54DC00A3875C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0397C7981C8B54DC00A3875C /* Eva.app */,
+				3591B13F1C8B6DD000B313B3 /* Eva-Today.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0397C79A1C8B54DC00A3875C /* Eva */ = {
+			isa = PBXGroup;
+			children = (
+				D43507A31C8CA0D9003831EF /* Entities */,
+				3591B1331C8B61C300B313B3 /* External */,
+				D44D1A511C8B58CF00C1E498 /* Interactor */,
+				D44D1A521C8B58F900C1E498 /* Services */,
+				D44D1A531C8B590900C1E498 /* Supporting files */,
+				D44D1A501C8B58C700C1E498 /* UI */,
+				D44D1A701C8B60A300C1E498 /* Utilities */,
+			);
+			path = Eva;
+			sourceTree = "<group>";
+		};
+		3591B1331C8B61C300B313B3 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3591B1381C8B643700B313B3 /* HTKnockDetector.h */,
+				3591B1391C8B643700B313B3 /* HTKnockDetector.m */,
+				3591B1341C8B61E900B313B3 /* Eva-Bridging-Header.h */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		3591B1421C8B6DD000B313B3 /* Eva-Today */ = {
+			isa = PBXGroup;
+			children = (
+				354BE4061C8C5012009CFEFC /* Eva-Today.entitlements */,
+				3591B1431C8B6DD000B313B3 /* TodayViewController.swift */,
+				3591B1451C8B6DD000B313B3 /* MainInterface.storyboard */,
+				3591B1481C8B6DD000B313B3 /* Info.plist */,
+			);
+			path = "Eva-Today";
+			sourceTree = "<group>";
+		};
+		3591B1541C8B9E5700B313B3 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				3591B1551C8B9E7E00B313B3 /* Theme.swift */,
+				3591B1571C8BA00900B313B3 /* Color.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		4FEE3F7AD8BAE968774DC75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354BE4031C8C4712009CFEFC /* LocalAuthentication.framework */,
+				D44D1A981C8B994300C1E498 /* CoreLocation.framework */,
+				3591B1401C8B6DD000B313B3 /* NotificationCenter.framework */,
+				CAB86430589488B4492910BF /* Pods_Eva.framework */,
+				23243FC5CB4E66C9374163FD /* Pods_Eva_Today.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D43507A31C8CA0D9003831EF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D43507A41C8CA0DE003831EF /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D44D1A501C8B58C700C1E498 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3591B1541C8B9E5700B313B3 /* Styling */,
+				03EF7C621C8B9C530087867A /* EmergencyButton.swift */,
+				03EF7C5B1C8B7F9E0087867A /* Button.swift */,
+				D44D1A541C8B595800C1E498 /* ReportViewController.swift */,
+				D44D1A551C8B595800C1E498 /* ReportViewController.xib */,
+				D44D1A561C8B595800C1E498 /* SignupViewController.swift */,
+				D44D1A571C8B595800C1E498 /* SignupViewController.xib */,
+				D44D1A581C8B595800C1E498 /* VerificationViewController.swift */,
+				D44D1A591C8B595800C1E498 /* VerificationViewController.xib */,
+				03FA57251C8BA50400499978 /* AccountViewController.swift */,
+				03FA57271C8BA58600499978 /* AccountViewController.xib */,
+				03E007091C8BB824000F4AEB /* PhotosViewController.swift */,
+				03E0070B1C8BB835000F4AEB /* PhotosViewController.xib */,
+				03E0070D1C8BBE48000F4AEB /* PhotoCell.swift */,
+				03E0070F1C8BBEA4000F4AEB /* PhotoCell.xib */,
+				03B638461C8BEF4B00DDA98A /* ContextViewController.swift */,
+				03B638481C8BEF5800DDA98A /* ContextViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D44D1A511C8B58CF00C1E498 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D44D1A7D1C8B667500C1E498 /* SignUpInteractor.swift */,
+				D44D1A7F1C8B669300C1E498 /* VerifyPhoneInteractor.swift */,
+				D44D1A811C8B66A000C1E498 /* ReportInteractor.swift */,
+				D4735AE21C8BBB2D00DEF6D6 /* ProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D44D1A521C8B58F900C1E498 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D44D1A6C1C8B5EC000C1E498 /* ModelDataManager.swift */,
+				3591B12F1C8B5F8100B313B3 /* LocationController.swift */,
+				3591B1311C8B5FAC00B313B3 /* MotionController.swift */,
+				D44D1A6E1C8B5EDE00C1E498 /* Networking.swift */,
+				D44D1A7A1C8B636B00C1E498 /* Persistence.swift */,
+				D4735AE41C8BC5FC00DEF6D6 /* FakeNetworking.swift */,
+				3591B1601C8BDCE300B313B3 /* CameraStreamer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D44D1A531C8B590900C1E498 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				354BE4051C8C4FED009CFEFC /* Eva.entitlements */,
+				D44D1A601C8B596300C1E498 /* AppDelegate.swift */,
+				D44D1A611C8B596300C1E498 /* Assets.xcassets */,
+				D44D1A651C8B596300C1E498 /* Info.plist */,
+				D43507A71C8CA4E1003831EF /* Launch Screen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D44D1A701C8B60A300C1E498 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D44D1A8A1C8B74DB00C1E498 /* Extensions */,
+				D44D1A771C8B617B00C1E498 /* Enums */,
+				D44D1A721C8B60AB00C1E498 /* Protocols */,
+				354BE3FF1C8C20CD009CFEFC /* MaskTransition.swift */,
+				03B6384A1C8CC1A000DDA98A /* Platform.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D44D1A721C8B60AB00C1E498 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D44D1A731C8B60B400C1E498 /* JSONParserType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D44D1A771C8B617B00C1E498 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D44D1A781C8B617B00C1E498 /* Environment.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D44D1A8A1C8B74DB00C1E498 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03EF7C551C8B7CCC0087867A /* String+Clean.swift */,
+				03EF7C561C8B7CCC0087867A /* String+Format.swift */,
+				D44D1A8B1C8B74DB00C1E498 /* NSError+Additions.swift */,
+				D44D1A8C1C8B74DB00C1E498 /* String+Additions.swift */,
+				D44D1A8D1C8B74DB00C1E498 /* UIAlertController+Short.swift */,
+				03EF7C5E1C8B99540087867A /* UIImage+Color.swift */,
+				3591B1521C8B7FDB00B313B3 /* UIViewController+Additions.swift */,
+				03EF7C651C8B9C7A0087867A /* UIColor+Shades.swift */,
+				3591B1621C8BE1B600B313B3 /* UIView+Additions.swift */,
+				3591B1661C8BF09200B313B3 /* UIBarButtonItem+Additions.swift */,
+				354BE4011C8C2BA8009CFEFC /* UIImageView+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1813C0460659E006F24A4D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59D4688B9177E7FF38FCB023 /* Pods-Eva.debug.xcconfig */,
+				A40A51683220A9BF8857C684 /* Pods-Eva.release.xcconfig */,
+				EFE2CDEC3AE4BA11A307FABD /* Pods-Eva-Today.debug.xcconfig */,
+				AFEF9478E34E6C4455B71FA9 /* Pods-Eva-Today.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0397C7971C8B54DC00A3875C /* Eva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0397C7AA1C8B54DC00A3875C /* Build configuration list for PBXNativeTarget "Eva" */;
+			buildPhases = (
+				B89C3368F361837E68EE7AFA /* Check Pods Manifest.lock */,
+				0397C7941C8B54DC00A3875C /* Sources */,
+				0397C7951C8B54DC00A3875C /* Frameworks */,
+				0397C7961C8B54DC00A3875C /* Resources */,
+				3591B14F1C8B6DD100B313B3 /* Embed App Extensions */,
+				D5E8BEAC7CFADADC14115286 /* Embed Pods Frameworks */,
+				4C00C2CAD38AE010F3E63581 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3591B14A1C8B6DD000B313B3 /* PBXTargetDependency */,
+			);
+			name = Eva;
+			productName = Eva;
+			productReference = 0397C7981C8B54DC00A3875C /* Eva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3591B13E1C8B6DD000B313B3 /* Eva-Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3591B14E1C8B6DD100B313B3 /* Build configuration list for PBXNativeTarget "Eva-Today" */;
+			buildPhases = (
+				6F2E1B5DD2A8E6599D561777 /* Check Pods Manifest.lock */,
+				3591B13B1C8B6DD000B313B3 /* Sources */,
+				3591B13C1C8B6DD000B313B3 /* Frameworks */,
+				3591B13D1C8B6DD000B313B3 /* Resources */,
+				A058E5960E50C0A69E3D87FA /* Embed Pods Frameworks */,
+				8A2BAB04783D81D0C4E51637 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eva-Today";
+			productName = "Eva-Today";
+			productReference = 3591B13F1C8B6DD000B313B3 /* Eva-Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0397C7901C8B54DC00A3875C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Axiom Zen";
+				TargetAttributes = {
+					0397C7971C8B54DC00A3875C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Q69P6333V2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					3591B13E1C8B6DD000B313B3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q69P6333V2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0397C7931C8B54DC00A3875C /* Build configuration list for PBXProject "Eva" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0397C78F1C8B54DC00A3875C;
+			productRefGroup = 0397C7991C8B54DC00A3875C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0397C7971C8B54DC00A3875C /* Eva */,
+				3591B13E1C8B6DD000B313B3 /* Eva-Today */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0397C7961C8B54DC00A3875C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44D1A5D1C8B595800C1E498 /* SignupViewController.xib in Resources */,
+				03FA57281C8BA58600499978 /* AccountViewController.xib in Resources */,
+				D44D1A5F1C8B595800C1E498 /* VerificationViewController.xib in Resources */,
+				D43507A81C8CA4E1003831EF /* Launch Screen.storyboard in Resources */,
+				D44D1A5B1C8B595800C1E498 /* ReportViewController.xib in Resources */,
+				03E0070C1C8BB835000F4AEB /* PhotosViewController.xib in Resources */,
+				03B638491C8BEF5800DDA98A /* ContextViewController.xib in Resources */,
+				03E007101C8BBEA4000F4AEB /* PhotoCell.xib in Resources */,
+				D44D1A671C8B596300C1E498 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3591B13D1C8B6DD000B313B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3591B1471C8B6DD000B313B3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C00C2CAD38AE010F3E63581 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eva/Pods-Eva-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F2E1B5DD2A8E6599D561777 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A2BAB04783D81D0C4E51637 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eva-Today/Pods-Eva-Today-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A058E5960E50C0A69E3D87FA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eva-Today/Pods-Eva-Today-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89C3368F361837E68EE7AFA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E8BEAC7CFADADC14115286 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eva/Pods-Eva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0397C7941C8B54DC00A3875C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44D1A7B1C8B636B00C1E498 /* Persistence.swift in Sources */,
+				D44D1A661C8B596300C1E498 /* AppDelegate.swift in Sources */,
+				D44D1A791C8B617B00C1E498 /* Environment.swift in Sources */,
+				D4735AE51C8BC5FC00DEF6D6 /* FakeNetworking.swift in Sources */,
+				3591B1561C8B9E7E00B313B3 /* Theme.swift in Sources */,
+				3591B1631C8BE1B600B313B3 /* UIView+Additions.swift in Sources */,
+				03EF7C571C8B7CCC0087867A /* String+Clean.swift in Sources */,
+				D44D1A741C8B60B400C1E498 /* JSONParserType.swift in Sources */,
+				D44D1A821C8B66A000C1E498 /* ReportInteractor.swift in Sources */,
+				D44D1A801C8B669300C1E498 /* VerifyPhoneInteractor.swift in Sources */,
+				03FA57261C8BA50400499978 /* AccountViewController.swift in Sources */,
+				03E0070A1C8BB824000F4AEB /* PhotosViewController.swift in Sources */,
+				354BE4021C8C2BA8009CFEFC /* UIImageView+Additions.swift in Sources */,
+				3591B1671C8BF09200B313B3 /* UIBarButtonItem+Additions.swift in Sources */,
+				03EF7C661C8B9C7A0087867A /* UIColor+Shades.swift in Sources */,
+				03EF7C5C1C8B7F9E0087867A /* Button.swift in Sources */,
+				3591B1611C8BDCE300B313B3 /* CameraStreamer.swift in Sources */,
+				D44D1A5E1C8B595800C1E498 /* VerificationViewController.swift in Sources */,
+				3591B1531C8B7FDB00B313B3 /* UIViewController+Additions.swift in Sources */,
+				03EF7C5F1C8B99540087867A /* UIImage+Color.swift in Sources */,
+				D44D1A8E1C8B74DB00C1E498 /* NSError+Additions.swift in Sources */,
+				D44D1A5C1C8B595800C1E498 /* SignupViewController.swift in Sources */,
+				D44D1A901C8B74DB00C1E498 /* UIAlertController+Short.swift in Sources */,
+				3591B1301C8B5F8100B313B3 /* LocationController.swift in Sources */,
+				3591B1581C8BA00900B313B3 /* Color.swift in Sources */,
+				3591B1321C8B5FAC00B313B3 /* MotionController.swift in Sources */,
+				D43507A51C8CA0DE003831EF /* User.swift in Sources */,
+				D44D1A6F1C8B5EDE00C1E498 /* Networking.swift in Sources */,
+				03B638471C8BEF4B00DDA98A /* ContextViewController.swift in Sources */,
+				D44D1A5A1C8B595800C1E498 /* ReportViewController.swift in Sources */,
+				03B6384B1C8CC1A000DDA98A /* Platform.swift in Sources */,
+				03E0070E1C8BBE48000F4AEB /* PhotoCell.swift in Sources */,
+				D44D1A8F1C8B74DB00C1E498 /* String+Additions.swift in Sources */,
+				D44D1A7E1C8B667500C1E498 /* SignUpInteractor.swift in Sources */,
+				3591B13A1C8B643700B313B3 /* HTKnockDetector.m in Sources */,
+				03EF7C581C8B7CCC0087867A /* String+Format.swift in Sources */,
+				03EF7C631C8B9C530087867A /* EmergencyButton.swift in Sources */,
+				354BE4001C8C20CD009CFEFC /* MaskTransition.swift in Sources */,
+				D44D1A6D1C8B5EC000C1E498 /* ModelDataManager.swift in Sources */,
+				D4735AE31C8BBB2D00DEF6D6 /* ProfileInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3591B13B1C8B6DD000B313B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3591B15A1C8BA52800B313B3 /* Color.swift in Sources */,
+				3591B1591C8BA4D100B313B3 /* Button.swift in Sources */,
+				03EF7C641C8B9C5B0087867A /* EmergencyButton.swift in Sources */,
+				D44D1A9D1C8BAE4200C1E498 /* NSError+Additions.swift in Sources */,
+				D43507A61C8CA32A003831EF /* User.swift in Sources */,
+				03EF7C601C8B9B6A0087867A /* UIImage+Color.swift in Sources */,
+				3591B1441C8B6DD000B313B3 /* TodayViewController.swift in Sources */,
+				D44D1A961C8B951A00C1E498 /* Environment.swift in Sources */,
+				D44D1A931C8B950300C1E498 /* Networking.swift in Sources */,
+				D4735AE61C8BC7DE00DEF6D6 /* FakeNetworking.swift in Sources */,
+				D44D1A941C8B950800C1E498 /* JSONParserType.swift in Sources */,
+				D44D1A951C8B951300C1E498 /* Persistence.swift in Sources */,
+				D44D1A911C8B94F500C1E498 /* ReportInteractor.swift in Sources */,
+				D44D1A971C8B990100C1E498 /* LocationController.swift in Sources */,
+				D44D1A921C8B94FC00C1E498 /* ModelDataManager.swift in Sources */,
+				03EF7C671C8B9C7A0087867A /* UIColor+Shades.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3591B14A1C8B6DD000B313B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3591B13E1C8B6DD000B313B3 /* Eva-Today */;
+			targetProxy = 3591B1491C8B6DD000B313B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3591B1451C8B6DD000B313B3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3591B1461C8B6DD000B313B3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0397C7A81C8B54DC00A3875C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Eva;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0397C7A91C8B54DC00A3875C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Eva;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0397C7AB1C8B54DC00A3875C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D4688B9177E7FF38FCB023 /* Pods-Eva.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Eva/Eva.entitlements;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Eva/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.axiomzen.Eva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eva/Eva-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0397C7AC1C8B54DC00A3875C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40A51683220A9BF8857C684 /* Pods-Eva.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Eva/Eva.entitlements;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Eva/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.axiomzen.Eva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eva/Eva-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3591B14C1C8B6DD100B313B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE2CDEC3AE4BA11A307FABD /* Pods-Eva-Today.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Eva-Today/Eva-Today.entitlements";
+				INFOPLIST_FILE = "Eva-Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.axiomzen.Eva.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3591B14D1C8B6DD100B313B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFEF9478E34E6C4455B71FA9 /* Pods-Eva-Today.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Eva-Today/Eva-Today.entitlements";
+				INFOPLIST_FILE = "Eva-Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.axiomzen.Eva.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0397C7931C8B54DC00A3875C /* Build configuration list for PBXProject "Eva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0397C7A81C8B54DC00A3875C /* Debug */,
+				0397C7A91C8B54DC00A3875C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0397C7AA1C8B54DC00A3875C /* Build configuration list for PBXNativeTarget "Eva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0397C7AB1C8B54DC00A3875C /* Debug */,
+				0397C7AC1C8B54DC00A3875C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3591B14E1C8B6DD100B313B3 /* Build configuration list for PBXNativeTarget "Eva-Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3591B14C1C8B6DD100B313B3 /* Debug */,
+				3591B14D1C8B6DD100B313B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0397C7901C8B54DC00A3875C /* Project object */;
+}
