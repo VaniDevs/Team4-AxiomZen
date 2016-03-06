@@ -1,0 +1,60 @@
+@import "../variables.scss";
+
+.c-eva-report {
+  border-radius: 0 !important;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.c-eva-report--btn-status {
+  border-radius: 0 !important;
+  position: absolute !important;
+  right: 80px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+}
+
+.c-eva-report--btn-reviewed {
+  border-radius: 0 !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width : 80px;
+}
+
+.c-eva-report--reported {
+  border-color: $color_material_red;
+  border-width: 0 0 0 5px;
+  &:hover {
+    background-color: $color_border_dark;
+    transition: background-color 0.5s;
+  }
+}
+
+.c-eva-report--dispatched {
+  border-color: $color_material_orange;
+  border-width: 0 0 0 5px;
+  &:hover {
+    background-color: $color_border_dark;
+    transition: background-color 0.5s;
+  }
+}
+
+.c-eva-report--resolved {
+  border-color: $color_material_green;
+  border-width: 0 0 0 5px;
+  &:hover {
+    background-color: $color_border_dark;
+    transition: background-color 0.5s;
+  }
+}
+
+.c-eva-report--close-by-user {
+  border-color: $color_material_blue;
+  border-width: 0 0 0 5px;
+  &:hover {
+    background-color: $color_border_dark;
+    transition: background-color 0.5s;
+  }
+}

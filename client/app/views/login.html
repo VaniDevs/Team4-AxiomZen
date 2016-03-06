@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1>Admin Login</h1>
+  <p class="lead">
+    Login to monitor your client's safety
+  </p>
+  <form ng-submit="login(username, password)" class="form-inline">
+    <fieldset class="form-group eva-form-group">
+      <input type="text" class="form-control" ng-model="username" name="username" placeholder="username"/>
+    </fieldset>
+    <br/>
+    <fieldset class="form-group eva-form-group">
+      <input type="password" class="form-control" ng-model="password" name="password" placeholder="password"/>
+    </fieldset>
+    <br/>
+    <fieldset class="form-group eva-form-group">
+      <button type="submit" class="btn btn-primary eva-button">Login</button>
+    </fieldset>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+<div ng-controller="MainCtrl" class="eva-main-container">
+  <div ng-controller="MapsCtrl">
+    <div class="eva-flex-container">
+      <div class="eva-map-container">
+        <div id="map"></div>
+      </div>
+      <div class="list-container">
+        <ul class="list-group eva-list-container">
+          <li class="list-group-item c-eva-report c-eva-report--{{ marker.status }}"
+            ng-click="openInfoWindow($event, marker)"
+            ng-class="{'selected': selected === marker}"
+            ng-repeat="marker in markers | orderBy : 'timestamp':true">
+            {{marker.title}}
+            <button
+              ng-click="update($event, marker)"
+              class="btn btn-default eva-button-sm"
+              ng-disabled="((marker.status === 'close-by-user') || (marker.status === 'resolved'))">
+              {{marker.status}}
+            </button>
+            <button ng-click="reviewed(marker)"
+                class="btn btn-default eva-button-sm"
+                ng-disabled="((marker.status !== 'resolved') && (marker.status !== 'close-by-user'))">
+              Reviewed
+            </button>
+            <button
+              class="btn btn-default eva-button-sm"
+              ng-click="showAModal(marker.imageLinks)">View Images</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
